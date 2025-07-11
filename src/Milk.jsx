@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector,useDispatch } from 'react-redux'
-import { increment, decrement, incrementByAmount } from './Redux/Counterslice'
+import { increment, decrement, incrementByAmount } from './Redux/Slice/MilkSlice' // Adjust the import path as necessary
 const Milk = () => {
     const milkprice=useSelector((state)=>state.milk.value)
     const dispatch=useDispatch()
